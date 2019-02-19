@@ -1,0 +1,39 @@
+<div style="text-align:center">
+  <h1>
+    Angular <ng-phonetic phonetic="フォネチック">Phonetic</ng-phonetic>
+  </h1>
+  <pre>
+    <code class="language-html" pCode>
+Angular &lt;ng-phonetic phonetic="フォネチック"&gt;Phonetic&lt;/ng-phonetic&gt;
+    </code>
+  </pre>
+  <h2>A simple component to easily render ruby text.</h2>
+</div>
+<hr>
+<p>Additionally, if the browser doesn't support <em>ruby text</em>, you can specify the brackets used in the fallback:</p>
+<p>
+  Specifying both brackets: <ng-phonetic phonetic="にほんご" brackets="「」">日本語</ng-phonetic>
+</p>
+<pre>
+  <code class="language-html" pCode>
+&lt;ng-phonetic phonetic="にほんご" brackets="「」" &gt;日本語&lt;/ng-phonetic&gt;
+  </code>
+</pre>
+<br />
+<p>
+  Using the same bracket twice: <ng-phonetic phonetic="조선적" brackets="|">朝鮮的</ng-phonetic>
+</p>
+<pre>
+  <code class="language-html" pCode>
+&lt;ng-phonetic phonetic="조선적" brackets="|" &gt;朝鮮的&lt;/ng-phonetic&gt;
+  </code>
+</pre>
+<br />
+<p>
+  Can also strip out the brackets: <ng-phonetic phonetic="zhōng wén" brackets="">中文</ng-phonetic>
+</p>
+<pre>
+  <code class="language-html" pCode>
+  &lt;ng-phonetic phonetic="zhōng wén" brackets="" &gt;中文&lt;/ng-phonetic&gt;
+  </code>
+</pre>
