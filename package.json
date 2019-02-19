@@ -1,13 +1,15 @@
 {
   "name": "angular-phonetic",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-example": "ng build example --prod --base-href \"https://tyrantwave.github.io/angular-phonetic/\"",
+    "deploy-example": "npx angular-cli-ghpages --dir=dist/example"
   },
   "private": true,
   "dependencies": {

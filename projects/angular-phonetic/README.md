@@ -1,24 +1,61 @@
-# AngularPhonetic
+# angular-phonetic
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+A simple component to aid in rendering ruby text.
 
-## Code scaffolding
+See an example here: <https://tyrantwave.github.io/angular-phonetic/>
 
-Run `ng generate component component-name --project angular-phonetic` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-phonetic`.
-> Note: Don't forget to add `--project angular-phonetic` or else it will be added to the default project in your `angular.json` file. 
+## Installation
 
-## Build
+- Install from npm:
 
-Run `ng build angular-phonetic` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install --save angular-phonetic
+```
 
-## Publishing
+## Importing to your application
 
-After building your library with `ng build angular-phonetic`, go to the dist folder `cd dist/angular-phonetic` and run `npm publish`.
+Reference the directive in the main module:
 
-## Running unit tests
+```typescript
+import { AngularPhoneticModule } from 'angular-phonetic';
+```
 
-Run `ng test angular-phonetic` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Then in your base module:
 
-## Further help
+```typescript
+imports: [
+    AngularPhoneticModule,
+]
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Using in your application
+
+Use the component, providing the phonetic guide:
+
+```html
+<ng-phonetic phonetic="zhōng wén">中文</ng-phonetic>
+```
+
+## Customisation
+
+For browsers that don't support the `<ruby>` tag, the brackets used for the phonetic guide can be customised:
+
+```html
+<ng-phonetic phonetic="にほんご" brackets="「」">日本語</ng-phonetic>
+```
+
+You can also specify no brackets if required:
+
+```html
+<ng-phonetic phonetic="にほんご" brackets="">日本語</ng-phonetic>
+```
+
+Or use the same bracket on both sides:
+
+```html
+<ng-phonetic phonetic="조선적" brackets="|">朝鮮的</ng-phonetic>
+```  
+
+## License
+
+MIT
