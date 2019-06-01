@@ -1,15 +1,22 @@
 {
   "name": "angular-phonetic",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple component to easily render ruby text.",
-  "keywords": ["Angular", "Library", "Phonetic", "Ruby", "Furigana", "Pinyin"],
+  "keywords": [
+    "Angular",
+    "Library",
+    "Phonetic",
+    "Ruby",
+    "Furigana",
+    "Pinyin"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/TyrantWave/angular-phonetic"
   },
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": "~8.0.0",
+    "@angular/core": "~8.0.0"
   }
 }
