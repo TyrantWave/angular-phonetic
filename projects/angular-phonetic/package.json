@@ -1,6 +1,6 @@
 {
   "name": "angular-phonetic",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple component to easily render ruby text.",
   "keywords": [
     "Angular",
@@ -16,7 +16,7 @@
     "url": "https://github.com/TyrantWave/angular-phonetic"
   },
   "peerDependencies": {
-    "@angular/common": "~8.0.0",
-    "@angular/core": "~8.0.0"
+    "@angular/common": "~8.2.5",
+    "@angular/core": "~8.2.5"
   }
 }
