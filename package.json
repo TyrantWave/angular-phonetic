@@ -7,9 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build-example": "ng build example --prod --base-href \"https://tyrantwave.github.io/angular-phonetic/\"",
-    "deploy-example": "npx angular-cli-ghpages --dir=dist/example"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^8.2.5",
     "@angular/router": "^8.2.5",
     "@ng-bootstrap/ng-bootstrap": "^5.1.1",
+    "angular-cli-ghpages": "^0.6.0",
     "core-js": "^3.2.1",
     "primeng": "^8.0.3",
     "prismjs": "^1.17.1",
